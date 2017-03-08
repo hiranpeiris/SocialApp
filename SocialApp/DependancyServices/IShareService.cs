@@ -1,7 +1,7 @@
-﻿using System;
-namespace SocialApp
+﻿namespace SocialApp
 {
 	public interface IShareService
 	{
+		void SharePageLink(string link);
 	}
 }

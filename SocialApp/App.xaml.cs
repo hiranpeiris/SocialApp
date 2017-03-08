@@ -8,7 +8,7 @@ namespace SocialApp
 		{
 			InitializeComponent();
 
-			MainPage = new SocialAppPage();
+			MainPage = new HomePage();
 		}
 
 		protected override void OnStart()

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace SocialApp
@@ -10,6 +8,12 @@ namespace SocialApp
 		public HomePage()
 		{
 			InitializeComponent();
+		}
+
+		private void OnShare(object sender, EventArgs e)
+		{
+			string shareLink = "http://hiranpeiris.com";
+			DependencyService.Get<IShareService>().SharePageLink(shareLink);
 		}
 	}
 }
